@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calendar</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="calendar-block">
+        <div class="calendar-head">
+          <div class="calendar-month"><strong>October</strong> 2019</div>
+          <div class="calendar-weekday-block">
+            <div class="calendar-item calendar-weekday-item">
+              Mon
+            </div>
+            <div class="calendar-item calendar-weekday-item">
+              Tue
+            </div>
+            <div class="calendar-item calendar-weekday-item">
+              Wed
+            </div>
+            <div class="calendar-item calendar-weekday-item">
+              Thu
+            </div>
+            <div class="calendar-item calendar-weekday-item">
+              Fri
+            </div>
+            <div class="calendar-item calendar-weekday-item calendar-weekend">
+              Sat
+            </div>
+            <div class="calendar-item calendar-weekday-item calendar-weekend">
+              Sun
+            </div>
+          </div>
+        </div>
+        <div class="calendar-body">
+          <div class="calendar-item calendar-day calendar-nextmonth">
+            30 Sep
+          </div>
+          <div class="calendar-item calendar-day">
+            1 Oct
+          </div>
+          <div class="calendar-item calendar-day">
+            2
+          </div>
+          <div class="calendar-item calendar-day">
+            3
+          </div>
+          <div class="calendar-item calendar-day">
+            4
+          </div>
+          <div class="calendar-item calendar-day calendar-weekend">
+            5
+          </div>
+          <div class="calendar-item calendar-day calendar-weekend">
+            6
+          </div>
+          <div class="calendar-item calendar-day">
+            7
+          </div>
+          <div class="calendar-item calendar-day">
+            8
+          </div>
+          <div class="calendar-item calendar-day">
+            9
+          </div>
+          <div class="calendar-item calendar-day">
+            10
+          </div>
+          <div class="calendar-item calendar-day">
+            11
+          </div>
+          <div class="calendar-item calendar-day calendar-weekend">
+            12
+          </div>
+          <div class="calendar-item calendar-day calendar-weekend">
+            13
+          </div>
+          <div class="calendar-item calendar-day">
+            14
+          </div>
+          <div class="calendar-item calendar-day">
+            15
+          </div>
+          <div class="calendar-item calendar-day">
+            16
+          </div>
+          <div class="calendar-item calendar-day">
+            17
+          </div>
+          <div class="calendar-item calendar-day">
+            18
+          </div>
+          <div class="calendar-item calendar-day calendar-weekend">
+            19
+          </div>
+          <div class="calendar-item calendar-day calendar-weekend">
+            20
+          </div>
+          <div class="calendar-item calendar-day">
+            21
+          </div>
+          <div class="calendar-item calendar-day">
+            22
+          </div>
+          <div class="calendar-item calendar-day">
+            23
+          </div>
+          <div class="calendar-item calendar-day">
+            24
+          </div>
+          <div class="calendar-item calendar-day ">
+           25
+          </div>
+          <div class="calendar-item calendar-day calendar-weekend">
+            <div class="tooltip">
+              26
+              <span class="tooltiptext">that holiday </span>
+            </div>
+          </div>
+          <div class="calendar-item calendar-day calendar-weekend">
+            27
+          </div>
+          <div class="calendar-item calendar-day">
+            28
+          </div>
+          <div class="calendar-item calendar-day">
+            29
+          </div>
+          <div class="calendar-item calendar-day">
+            30
+          </div>
+          <div class="calendar-item calendar-day">
+            31 Oct
+          </div>
+          <div class="calendar-item calendar-day calendar-nextmonth">
+            1 Nov
+          </div>
+          <div class="calendar-item calendar-day calendar-nextmonth calendar-weekend">
+            2
+          </div>
+          <div class="calendar-item calendar-day calendar-nextmonth calendar-weekend">
+            3
+          </div>
+          <div class="calendar-item calendar-day calendar-nextmonth">
+            4
+          </div>
+          <div class="calendar-item calendar-day calendar-nextmonth">
+            5
+          </div>
+          <div class="calendar-item calendar-day calendar-nextmonth">
+            6
+          </div>
+          <div class="calendar-item calendar-day calendar-nextmonth">
+            7
+          </div>
+          <div class="calendar-item calendar-day calendar-nextmonth">
+            8
+          </div>
+          <div class="calendar-item calendar-day calendar-nextmonth calendar-weekend">
+            9
+          </div>
+          <div class="calendar-item calendar-day calendar-nextmonth calendar-weekend">
+            <div class="tooltip" title=" " id="one">
+              10
+            </div>
+            <div class="calendar-holiday">
+              <button onclick="show()">тык</button>
+            </div>
+          </div>
+        </div>
+        <!-- end of calendar body -->
+      </div>
+      <!-- end of calendar block -->
+      <label for="dark-and-light">Dark and Light</label>
+      <select id="dark-and-light">
+        <option value="Light">Light</option>
+        <option value="Dark">Dark</option>
+      </select>
+    </main>
+    <script src="topic.js"></script>
+  </body>
+</html>

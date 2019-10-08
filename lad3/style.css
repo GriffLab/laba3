@@ -1,0 +1,164 @@
+.container {
+  margin: auto;
+  width: 80%;
+
+}
+.calendar-block {
+  font-family: 'Montserrat', sans-serif;
+  background: #dedede;
+  height: auto;
+  width: 100%;
+  padding: 1px;
+  display: grid;
+}
+
+.calendar-head {
+  height: auto;
+  width: calc(100% - 2px);
+  background: white;
+  margin: 1px;
+}
+
+.calendar-month {
+  font-size: 25px;
+  padding: 10px; 
+  padding-bottom: 0;
+}
+
+.calendar-item {
+  float: left;
+  text-align: right;
+  padding: 10px;
+}
+
+.calendar-weekday-item {
+  width: calc(100% / 7 - 22px);
+  margin: 1px;
+}
+
+.calendar-day {
+  height: 60px;
+  background: white;
+  margin: 1px;
+  width: calc(100% / 7 - 22px);
+  position: relative;
+}
+
+.calendar-day.calendar-weekend {
+  background: #ededed;
+  color: #8f8f8f;
+}
+
+.calendar-weekday-item.calendar-weekend {
+  color: #b5b5b5;
+}
+
+.calendar-day.calendar-nextmonth {
+  color: #ff0000
+}
+
+/* d theme styles start */
+.calendar-weekday-item.calendar-dark {
+  background: #4f4f4f;
+  color: #ededed;
+}
+
+.calendar-block.calendar-dark {
+  background: black;
+}
+
+.calendar-head.calendar-dark {
+  background: #4f4f4f;
+}
+
+.calendar-month.calendar-dark {
+  background: #4f4f4f;
+  color: #ededed;
+}
+
+.calendar-weekday-block.calendar-dark {
+  background: black;
+}
+
+.calendar-day.calendar-dark {
+  background: #4f4f4f;
+  color: #CED23A;
+}
+
+.calendar-day.calendar-weekend.calendar-dark {
+  background: #5e5e5e;
+  color: #CED23A;
+}
+
+.calendar-day.calendar-nextmonth.calendar-dark {
+  color: #706f6f;
+}
+
+.calendar-weekday-item.calendar-weekend.calendar-dark {
+  background: #4f4f4f;
+  color: #ff4040;
+}
+/* dark theme styles end */
+
+button {
+  font-size: 0.8em;
+  background: #A65E2E;
+  padding: 2px 10px;
+  position: absolute;
+  bottom: 2px;
+  right: 3px;
+}
+
+.calendar-day.calendar-current span {
+  background: #ff4040;
+  padding: 5px;
+  border-radius: 100%;
+  color: #fff;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
